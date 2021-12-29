@@ -1,0 +1,9 @@
+{
+    "a": 0,
+    "b": {"$lt": 0},
+    "cCheck": {"$assign": {
+        "c": 0,
+        "dCheck": {"$assign": {"d": 0}}
+        }},
+    "dCheck": {"$assign": {"d": 0}}
+}

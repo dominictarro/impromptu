@@ -1,0 +1,20 @@
+repos:
+- hooks:
+  - args:
+    - unittest
+    entry: make
+    id: unittest
+    language: python
+    name: unittest
+    pass_filenames: false
+    stages:
+    - commit
+    - manual
+    verbose: true
+  repo: local
+- hooks:
+  - id: commitizen
+    stages:
+    - commit-msg
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v2.20.3
